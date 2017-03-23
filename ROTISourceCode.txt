@@ -1,0 +1,21 @@
+ClrHome
+Disp "ROTATED CONICS SOLVER V2"
+Input "A:",A
+Input "B:",B
+Input "C:",C
+Input "D:",D
+Input "E:",E
+Input "F:",Z
+Input "# of decimals to round:",P
+Input "theta:",T
+ClrHome
+Disp "A':"
+Output(1,4,round(A*cos(T)*cos(T)+B*sin(T)*cos(T)+C*sin(T)*sin(T),P))
+Disp "C':"
+Output(2,4,round(A*sin(T)*sin(T)-B*sin(T)*cos(T)+C*cos(T)*cos(T),P))
+Disp "D':"
+Output(3,4,round(D*cos(T)+E*sin(T),P))
+Disp "E':"
+Output(4,4,round(E*cos(T)-D*sin(T),P))
+Disp "F':"
+Output(5,4,Z)
